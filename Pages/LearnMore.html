@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Learn More</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <div class="top-container" style="background-image: url('images/earth.webp'); background-repeat: no-repeat;"  >
+	
+    <div class="intro">
+      <h1> Welcome to Vodafone Global</h1>
+      <h2>You are in INDIA</h2>
+    </div>
+    
+    
+  </div>
+<button class="accordion">What can Vodafone digital do?</button>
+<div class="panel">
+  <p>We’re entering a new era that demands richer, faster and more consistent experiences that will transform business and lives. You want to drive growth in your business and innovate for tomorrow with the latest advances in AI, mobile business apps, edge computing and blockchain. Our digital services will help you get there.</p>
+</div>
+
+<button class="accordion">Digital services to open up new possibilities</button>
+<div class="panel">
+  <p><ul>
+  <li>AI Assistants</li>
+  <li>Vodafone Business Drone Detection</li>
+  <li>Mixed Reality</li>
+</ul></p>
+</div>
+
+<button class="accordion">Our Partner Ecosystem</button>
+<div class="panel">
+  <p><ul>
+  <li>AWS</li>
+  <li>Microsoft</li>
+  <li>IBM</li>
+  <li>Google</li></ul>
+</p>
+</div>
+<style>
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion:after {
+  content: '\02795'; 
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; 
+}
+</style>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+</script>
+
+
+     
+  
+
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/Vodafone_logo.png" alt="Vodafone_logo-img">
+      <h2>Namaste.</h2>
+      <p class="intro">Thank You for Choosing Vodafone.</p>
+    </div>
+    <hr>
+   
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/company/Vodafone">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/Vodafonegroup?lang=en">Twitter</a>
+    
+    <p class="copyright">© GBIS Digital Team Vodafone.</p>
+  </div>
+  
+ 
+</body>
+
+</html>
